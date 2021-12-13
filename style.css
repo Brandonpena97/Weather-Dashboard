@@ -1,6 +1,6 @@
 .dash-title {
     font-size:3rem;
-    background-color: rgb(33, 5, 160);
+    background-color: rgb(7, 63, 182);
     color: white; 
     text-align: center;
 
@@ -10,7 +10,7 @@
     text-align: left, center;
     border: double;
     box-sizing: border-box;
-    width: 1000px;
+    width: 2000px;
     height: 300px;
     padding: 20px;
 }
@@ -28,7 +28,8 @@
 .front-main {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .search-main {
@@ -37,6 +38,8 @@
    padding: 20px;
    border-bottom: 2px solid black;
    margin: 0 20px;
+   gap: 5px;
+   
   
 }
 
@@ -50,9 +53,10 @@
 }
 
 .history {
-    justify-content: space-between;
+    justify-content: space-around; 
     display: flex;
     flex-direction: column;
+    gap: 10px;
     
 }
    
