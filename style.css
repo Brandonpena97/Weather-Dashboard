@@ -1,0 +1,58 @@
+.dash-title {
+    font-size:3rem;
+    background-color: rgb(33, 5, 160);
+    color: white; 
+    text-align: center;
+
+}
+
+.main-weather{
+    text-align: left, center;
+    border: double;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 300px;
+    padding: 20px;
+}
+
+.daySearch{
+    color: whitesmoke;
+    background-color:rgb(12, 145, 223);
+    border: none;
+    padding: 10px 80px;
+    font-size: 16px;
+    border-radius: 10px;
+    
+}
+
+.front-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-main {
+   display: flex;
+   flex-direction: column; 
+   padding: 20px;
+   border-bottom: 2px solid black;
+   margin: 0 20px;
+  
+}
+
+.cityHistory{
+    color: whitesmoke;
+    background-color:grey;
+    border: none;
+    padding: 10px 80px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.history {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    
+}
+   
