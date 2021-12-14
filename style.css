@@ -59,4 +59,16 @@
     gap: 10px;
     
 }
-   
+
+.h1-Images{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.fiveDay {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
