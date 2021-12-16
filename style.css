@@ -67,8 +67,28 @@
 }
 
 .fiveDay {
-    border: 2px solid black;
+    
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 50px;
+}
+
+.tomorrow-2{
+    border: 5px solid midnightblue;
+}
+
+.tomorrow-3{
+    border: 5px solid midnightblue ;
+}
+
+.tomorrow-4{
+    border:  5px solid midnightblue;
+}
+
+.tomorrow-5{
+    border: 5px solid midnightblue;
+}
+
+.tomorrow-6{
+    border: 5px solid midnightblue;
 }

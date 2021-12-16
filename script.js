@@ -13,6 +13,7 @@ var dayWind2 = document.querySelector(".dayWind2")
 var dayHumid2 = document.querySelector(".dayHumid2")
 var dayIcon2 = document.querySelector(".dayIcon2")
 var dayUvi2 = document.querySelector(".dayUvi2")
+var dayDate2 = document.querySelector(".dayCity2")
 
 
 daySearch.addEventListener("click", Search)
@@ -41,7 +42,7 @@ function Search(event) {
             var windSpeed = data.wind.speed;
             var humidity = data.main.humidity;
             var date = moment(data.dt * 1000).format("M/D/YYYY");
-            
+
 
             // dayTemp.textContent = "Temp: " + temp + " °F"
             dayTemp.textContent = `Temp: ${convertedTemp} °F`;
@@ -49,7 +50,7 @@ function Search(event) {
             dayHumid.textContent = `Humidity: ${humidity} %`;
             dayCity.textContent = `${data.name} (${date})`;
             dayIcon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
-            
+
 
 
             // second fetch API
@@ -70,9 +71,7 @@ function Search(event) {
 
                     var humidity2 = data2.daily[1].humidity;
 
-                    var dayDate2 = moment(data2.daily[1].dt*1000).format("M/D/YYYY");
-
-                    var dayIcon2 =`https://openweathermap.org/img/wn/${data2.daily[1].weather[0].icon}.png`;
+                    var date2 = moment(data2.daily[1].dt * 1000).format("M/D/YYYY");
 
                     dayTemp2.textContent = `Temp: ${convertedTemp2} °F`;
 
@@ -80,9 +79,9 @@ function Search(event) {
 
                     dayHumid2.textContent = `Humidity: ${humidity2} %`;
 
-                    //dayCity2.textContent = `${data2.name} (${date2})`;
+                    dayDate2.textContent = `${data2.name} (${date2})`;
 
-                    dayIcon2.setAttribute("src",`https://openweathermap.org/img/wn/${data2.daily[1].weather[0].icon}.png` );
+                    dayIcon2.setAttribute("src", `https://openweathermap.org/img/wn/${data2.daily[1].weather[0].icon}.png`);
 
 
 
