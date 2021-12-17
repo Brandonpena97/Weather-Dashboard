@@ -1,6 +1,6 @@
 .dash-title {
     font-size:3rem;
-    background-color: rgb(7, 63, 182);
+    background-color: midnightblue;
     color: white; 
     text-align: center;
 
@@ -17,7 +17,7 @@
 
 .daySearch{
     color: whitesmoke;
-    background-color:rgb(12, 145, 223);
+    background-color:midnightblue;
     border: none;
     padding: 10px 80px;
     font-size: 16px;
@@ -75,20 +75,30 @@
 
 .tomorrow-2{
     border: 5px solid midnightblue;
+    background-color: midnightblue;
+    color: white;
 }
 
 .tomorrow-3{
     border: 5px solid midnightblue ;
+    background-color: midnightblue;
+    color: white;
 }
 
 .tomorrow-4{
     border:  5px solid midnightblue;
+    background-color: midnightblue;
+    color: white;
 }
 
 .tomorrow-5{
     border: 5px solid midnightblue;
+    background-color: midnightblue;
+    color: white;
 }
 
 .tomorrow-6{
     border: 5px solid midnightblue;
+    background-color: midnightblue;
+    color: white;
 }
