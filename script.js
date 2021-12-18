@@ -155,13 +155,6 @@ function Search(event) {
                     dayIcon6.setAttribute("src", `https://openweathermap.org/img/wn/${data2.daily[5].weather[0].icon}.png`);
 
 
-
-
-
-
-
-                    // display 5 day data
-
                 })
 
         })
@@ -173,6 +166,9 @@ function Search(event) {
 function generateHistory(cityName) {
     var historyButton = document.createElement('button')
     historyButton.textContent = cityName
+
+    historyButton.addEventListener("click",cityHistory )
+
     historyButton.classList.add("cityHistory")
     var historyDiv = document.querySelector(".history")
     historyDiv.append(historyButton)
@@ -181,3 +177,11 @@ for (let i = 0; i < Cities.length; i++) {
     generateHistory(Cities[i])
 
 }
+
+function cityHistory() {
+    console.log('You clicked on a city Button');
+
+    citySearch.value = event.target.textContent
+
+    daySearch.click();
+};
